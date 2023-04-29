@@ -34,7 +34,7 @@ export class TasksService {
     if (!found) {
       throw new NotFoundException('Task not found');
     }
-    return found[0];
+    return found;
   }
   // createTask(createTaskDto: CreateTaskDto): Task {
   //   const { title, description } = createTaskDto;
