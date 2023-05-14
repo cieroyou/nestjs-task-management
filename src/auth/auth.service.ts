@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { UsersRespository } from './users.repository';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
 
