@@ -11,7 +11,7 @@ import * as bcrypt from 'bcrypt';
 export class AuthService {
   constructor(private readonly usersRepository: UsersRespository) {}
 
-  async singUp(authCredentialsDto: AuthCredentialsDto): Promise<void> {
+  async signUp(authCredentialsDto: AuthCredentialsDto): Promise<void> {
     return this.usersRepository.createUser(authCredentialsDto);
   }
 
